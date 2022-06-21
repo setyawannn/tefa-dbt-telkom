@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!--  My CSS  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylehome.css">
 
 </head>
 <body>
@@ -23,9 +23,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav text-center ms-auto">
-                        <a class="nav-link" id="link-home" href="#">Home</a>
-                        <a class="nav-link" href="#">Profile</a>
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" id="link-home" href="./home.html">Home</a>
+                        <a class="nav-link" href="./profile/profile.html">Profile</a>
+                        <a class="nav-link" href="./contact/contact.html">Contact</a>
                     </div>
                 </div>
             </div>
@@ -34,11 +34,10 @@
     <!--  Akhir Navbar   -->
 
     <!--  Jumbotron   -->
-
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
             <div class="container jumbotron__container">
-                <img src="img/pict1.png" alt="">
+                <img src="./img/pict1.png" alt="">
                 <h1 class="display-4">Sistem Info Akademik <br> Kelompok Enam TEFA</h1>
                 <p class="lead">Segala wujud kekesalan dan keresahan <br>selama berada di kelompok ini</p>
                 <button type="button" class="btn btn-lg">Lihat selengkapnya</button>
@@ -50,7 +49,6 @@
     <!--  Services  -->
     <div class="services">
         <div class="container">
-
             <!--   Info     -->
             <div class="row justify-content-center ">
                 <div class="head-info">
@@ -59,18 +57,18 @@
                 </div>
                  <div class="col-lg-12 info-panel">
                     <div class="row">
-                        <div class="col-lg">
-                            <img src="img/graphic.svg" alt="" class="float-start">
+                        <div class="col-lg panel-item">
+                            <img src="./img/graphic.svg" alt="" class="float-start">
                             <h4>Grafik Akademik</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae culpa doloribus fuga fugiat laborum nisi nostrum quaerat velit.</p>
                         </div>
-                        <div class="col-lg">
-                            <img src="img/bookmark.svg" alt="" class="float-start">
+                        <div class="col-lg panel-item">
+                            <img src="./img/bookmark.svg" alt="" class="float-start">
                             <h4>Nilai Mata Pelajaran</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae culpa doloribus fuga fugiat laborum nisi nostrum quaerat velit.</p>
                         </div>
-                        <div class="col-lg">
-                            <img src="img/message.svg" alt="" class="float-start">
+                        <div class="col-lg panel-item">
+                            <img src="./img/message.svg" alt="" class="float-start">
                             <h4>Pengaduan</h4>
                             <div class="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae culpa doloribus fuga fugiat laborum nisi nostrum quaerat velit.</p>
@@ -80,18 +78,95 @@
                 </div>
             </div>
             <!--   Akhir Info     -->
-
         </div>
     </div>
     <!--  Akhir Services  -->
 
+    <!--  Data  -->
+    <div class="data">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="head-data col-lg-6">
+                    <h2>Data Sistem Informasi Akademik</h2>
+                    <p>Menampilkan Data Statistik Sistem Informasi tiap Tahun Ajaran</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="" alt="">
+                </div>
+                <div class="data-item item-top col-lg-3">
+                    <img src="./img/student.svg" alt="" class="float-start">
+                    <h3>Siswa Aktif</h3>
+                    <p>1095</p>
+                </div>
+                <div class="data-item item-top col-lg-3">
+                    <img src="./img/teacher.svg" alt="" class="float-start">
+                    <h3>Guru Terbaik</h3>
+                    <p>215</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 data-main-img">
+                    <img src="./img/pict2.png" alt="">
+                </div>
+                <div class="data-item col-lg-3">
+                    <img src="./img/alumni.svg" alt="" class="float-start">
+                    <h3>Ikatan Alumni</h3>
+                    <p>5000+</p>
+                </div>
+                <div class="data-item col-lg-3">
+                    <img src="./img/industri.svg" alt="" class="float-start">
+                    <h3>Industri</h3>
+                    <p>472</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Akhir Data  -->
 
+    <!--  Footer  -->
+    <footer class="footer-distributed">
 
+        <div class="footer-left">
+            <h3>K<span>E</span>NAFA</h3>
 
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">Profile</a>
+                |
+                <a href="#">Contact</a>
+            </p>
 
+            <p class="footer-company-name">Copyright © 2022 <strong>KENAFADeveloper</strong> All rights reserved</p>
+        </div>
 
+        <div class="footer-center">
+            <div>
+                <h4>Informasi Team</h4>
+            </div>
 
+            <div class="nama-team">
+                <p>Abby Satya Diananda (Tidak Berkontribusi)</p>
+                <p>Prayoga Adi Setyawan</p>
+                <p>Oryza Valendio</p>
+                <p>Zefanya Raditya Pratama (Kurang Berkontribusi)</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-team-about">
+                <span>About the team</span>
+                <strong>KENAFA Developer</strong> pengerjaan hanya dikerjakan oleh dua orang, Prayoga bagian home dan Oryza bagian profile and contact,
+                kami berdua merasa sangat tidak nyaman dengan keadaan ini. Kami berharap dari panitia TEFA dapat segera menanganinya.
+            </p>
+        </div>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!--  Akhir Footer  -->
 </body>
+
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>
