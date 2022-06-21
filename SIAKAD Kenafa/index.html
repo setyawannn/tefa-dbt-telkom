@@ -1,172 +1,286 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SIAKAD Kenafa</title>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
 
-    <!--  Bootstrap CSS  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
 
-    <!--  My CSS  -->
-    <link rel="stylesheet" href="stylehome.css">
+::-webkit-scrollbar-track {
+    background: #4a4a4a;
+}
 
-</head>
-<body>
-    <!--  Navbar   -->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">K<span>E</span>NAFA</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav text-center ms-auto">
-                        <a class="nav-link" id="link-home" href="./home.html">Home</a>
-                        <a class="nav-link" href="./profile/profile.html">Profile</a>
-                        <a class="nav-link" href="./contact/contact.html">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!--  Akhir Navbar   -->
+::-webkit-scrollbar-thumb {
+    background: #FE6E27;
+}
 
-    <!--  Jumbotron   -->
-    <div class="container">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container jumbotron__container">
-                <img src="./img/pict1.png" alt="">
-                <h1 class="display-4">Sistem Info Akademik <br> Kelompok Enam TEFA</h1>
-                <p class="lead">Segala wujud kekesalan dan keresahan <br>selama berada di kelompok ini</p>
-                <button type="button" class="btn btn-lg">Lihat selengkapnya</button>
-            </div>
-        </div>
-    </div>
-    <!--  Akhir Jumbotron   -->
+body {
+    background-color: #fbfaf9;
 
-    <!--  Services  -->
-    <div class="services">
-        <div class="container">
-            <!--   Info     -->
-            <div class="row justify-content-center ">
-                <div class="head-info">
-                    <h2>Layanan Terbaik Kami</h2>
-                    <p>Dengan dukungan infrastruktur dan sistem yang modern,<br> semua proses dapat berjalan dengan lancar</p>
-                </div>
-                 <div class="col-lg-12 info-panel">
-                    <div class="row">
-                        <div class="col-lg panel-item">
-                            <img src="./img/graphic.svg" alt="" class="float-start">
-                            <h4>Grafik Akademik</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae culpa doloribus fuga fugiat laborum nisi nostrum quaerat velit.</p>
-                        </div>
-                        <div class="col-lg panel-item">
-                            <img src="./img/bookmark.svg" alt="" class="float-start">
-                            <h4>Nilai Mata Pelajaran</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae culpa doloribus fuga fugiat laborum nisi nostrum quaerat velit.</p>
-                        </div>
-                        <div class="col-lg panel-item">
-                            <img src="./img/message.svg" alt="" class="float-start">
-                            <h4>Pengaduan</h4>
-                            <div class="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae culpa doloribus fuga fugiat laborum nisi nostrum quaerat velit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--   Akhir Info     -->
-        </div>
-    </div>
-    <!--  Akhir Services  -->
+}
 
-    <!--  Data  -->
-    <div class="data">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6"></div>
-                <div class="head-data col-lg-6">
-                    <h2>Data Sistem Informasi Akademik</h2>
-                    <p>Menampilkan Data Statistik Sistem Informasi tiap Tahun Ajaran</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="" alt="">
-                </div>
-                <div class="data-item item-top col-lg-3">
-                    <img src="./img/student.svg" alt="" class="float-start">
-                    <h3>Siswa Aktif</h3>
-                    <p>1095</p>
-                </div>
-                <div class="data-item item-top col-lg-3">
-                    <img src="./img/teacher.svg" alt="" class="float-start">
-                    <h3>Guru Terbaik</h3>
-                    <p>215</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 data-main-img">
-                    <img src="./img/pict2.png" alt="">
-                </div>
-                <div class="data-item col-lg-3">
-                    <img src="./img/alumni.svg" alt="" class="float-start">
-                    <h3>Ikatan Alumni</h3>
-                    <p>5000+</p>
-                </div>
-                <div class="data-item col-lg-3">
-                    <img src="./img/industri.svg" alt="" class="float-start">
-                    <h3>Industri</h3>
-                    <p>472</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  Akhir Data  -->
+/* Navbar */
+.navbar-brand span {
+    color: #FE6E27;
+}
 
-    <!--  Footer  -->
-    <footer class="footer-distributed">
+.navbar-brand {
+    color: #242C31;
+    font-size: 31px;
+    font-weight: bold;
+}
 
-        <div class="footer-left">
-            <h3>K<span>E</span>NAFA</h3>
+.nav-link {
+    color: #242C31;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 30px;
+}
 
-            <p class="footer-links">
-                <a href="#">Home</a>
-                |
-                <a href="#">Profile</a>
-                |
-                <a href="#">Contact</a>
-            </p>
+#link-home {
+    color: #FE6E27;
+}
+.nav-link:hover {
+    color: #FE6E27;
+}
 
-            <p class="footer-company-name">Copyright © 2022 <strong>KENAFADeveloper</strong> All rights reserved</p>
-        </div>
+/* Jumbotron */
 
-        <div class="footer-center">
-            <div>
-                <h4>Informasi Team</h4>
-            </div>
+.jumbotron {
+    min-height: 75vh;
+    width: 100%;
+}
+.jumbotron__container img {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 45%;
+}
 
-            <div class="nama-team">
-                <p>Abby Satya Diananda (Tidak Berkontribusi)</p>
-                <p>Prayoga Adi Setyawan</p>
-                <p>Oryza Valendio</p>
-                <p>Zefanya Raditya Pratama (Kurang Berkontribusi)</p>
-            </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-team-about">
-                <span>About the team</span>
-                <strong>KENAFA Developer</strong> pengerjaan hanya dikerjakan oleh dua orang, Prayoga bagian home dan Oryza bagian profile and contact,
-                kami berdua merasa sangat tidak nyaman dengan keadaan ini. Kami berharap dari panitia TEFA dapat segera menanganinya.
-            </p>
-        </div>
-    </footer>
+.jumbotron__container h1 {
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 7rem;
+}
 
-    <!--  Akhir Footer  -->
-</body>
+.jumbotron__container p {
+    font-size: 17px;
+    opacity: 85%;
+}
 
-<!-- JS Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</html>
+.jumbotron__container button {
+    background-color: #FE6E27;
+    color: #fbfaf9;
+    margin-top: 2rem;
+}
+
+.jumbotron__container button:hover {
+    background-color: #fbfaf9;
+    color: #FE6E27;
+}
+
+/* Services Panel */
+.services {
+    background-color: #242C31;
+    min-height: 70vh;
+
+}
+
+.head-info {
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.head-info h2 {
+    color: #fbfaf9;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.head-info p {
+    color: #fbfaf9;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 90%;
+    margin-top: 2rem;
+}
+
+.col-lg {
+    background-color: #fbfaf9;
+    margin: 35px;
+    border-radius: 10px;
+}
+
+.panel-item img {
+    width: 80px;
+    margin: 10px 0 10px 10px;
+}
+
+.panel-item h4 {
+    color: #242C31;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 20px;
+
+}
+
+.panel-item p {
+    color: #242C31;
+    font-weight: 400;
+    margin-left: 7px;
+    opacity: 95%;
+}
+
+/* Data */
+.data {
+    min-height: 90vh;
+}
+.head-data h2 {
+    margin-top: 5rem;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.head-data p {
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 90%;
+}
+
+.item-top {
+    margin-top: 2rem;
+    max-width: 30%;
+}
+
+.data-item img {
+    margin-top: 3rem;
+    width: 80px;
+}
+.data-item h3 {
+    margin-top: 4rem;
+    font-size: 25px;
+}
+
+.data-item p {
+    color: #FE6E27;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.data-main-img img {
+    position: absolute;
+    width: 35%;
+    top: 200vh;
+}
+
+/* Footer */
+footer {
+    bottom: 0;
+}
+
+
+.footer-distributed {
+    background-color: #242C31;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #fbfaf9;
+    font-size: 31px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #FE6E27;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #fbfaf9;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-links a:hover {
+    color: #FE6E27;
+}
+
+
+.footer-distributed .footer-company-name {
+    color: #fbfaf9;
+    font-size: 13px;
+    opacity: 50%;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center h4 {
+    color: #fbfaf9;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-distributed .footer-center p {
+    display: block;
+    color: #fbfaf9;
+    opacity: 75%;
+    font-size: 13px;
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-team-about   {
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-team-about span {
+    display: block;
+    color: #fbfaf9;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
