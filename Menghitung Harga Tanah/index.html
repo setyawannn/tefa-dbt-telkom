@@ -29,19 +29,17 @@
     let result = document.getElementById("result");
 
     button.addEventListener("click", () => {
-        const vPanjang = Number(panjang.value)
-        const vLebar = Number(lebar.value);
-        let vHargaTanah = Number(hargaTanah.value);
+            const vPanjang = Number(panjang.value)
+            const vLebar = Number(lebar.value);
+            let vHargaTanah = Number(hargaTanah.value);
 
-        let luas = vPanjang * vLebar;
-        document.writeln(`Harga tanah tahun ini adalah : ${vHargaTanah*luas}<br>`)
-        for (let i = 2; i <= 5; i++) {
-            vHargaTanah = vHargaTanah*10/100+vHargaTanah;
-            document.writeln(`harga tanah tahun ke ${i} = ${vHargaTanah*luas}<br>`);
-        }   
-    } 
-        )
+            let luas = vPanjang * vLebar;
+            for (let i = 1; i <= 5; i++) {
+                result.innerHTML += (`harga tanah tahun ke ${i} = ${vHargaTanah*luas}<br>`);
+                vHargaTanah += vHargaTanah*10/100;
+            }
+        }
+    )
 </script>
-
 </body>
 </html>
